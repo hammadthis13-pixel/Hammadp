@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="[YOUR NAME] - VIP Portfolio & Developer Profile">
+  <title>[YOUR NAME] | VIP Portfolio</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Animated Grid -->
+  <div class="ambient-grid"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <!-- LOGO REPLACEMENT: logo.png use hoga, agar na mile to text show hoga -->
+        <img src="logo.png" alt="Logo" class="site-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+        <span class="fallback-logo">[NAME]<span>.</span></span>
+      </a>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <!-- Profile Picture Glow Frame -->
+      <div class="dp-wrapper">
+        <div class="dp-frame">
+          <!-- PROFILE PHOTO: profile.jpg folder me rakhein -->
+          <img src="profile.jpg" alt="Profile Photo" id="profile-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400';">
+        </div>
+      </div>
+
+      <h1 class="hero-name">[YOUR NAME]</h1>
+      <p class="hero-tagline">[Your Professional Tagline / High-End Title — e.g., Senior Full-Stack Engineer & Creative Architect building modern digital experiences]</p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-down-long"></i> View My Projects
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fa-regular fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+
+      <div class="social-links">
+        <a href="[GITHUB_URL]" class="social-btn" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="[LINKEDIN_URL]" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="[TWITTER_OR_X_URL]" class="social-btn" aria-label="X / Twitter" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:[YOUR_EMAIL@EXAMPLE.COM]" class="social-btn" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Identity</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>[Short professional introduction: Describe your background, your design/engineering philosophy, and what drives you to create high-caliber digital products.]</p>
+          <p>[Creative/Engineering Journey: Describe your progression, technologies you enjoy working with most, and the real-world value you deliver to users and businesses.]</p>
+        </div>
+
+        <div class="stats-container">
+          <div class="glass-panel stat-card">
+            <div class="stat-number">[X]+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="glass-panel stat-card">
+            <div class="stat-number">[Y]+</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="glass-panel stat-card">
+            <div class="stat-number">[Z]K+</div>
+            <div class="stat-label">Active Users / Clients</div>
+          </div>
+          <div class="glass-panel stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Commitment to Quality</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Capabilities</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="glass-panel skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+          <div class="skill-info">
+            <h4>[Frontend Architecture]</h4>
+            <p>[React, TypeScript, Tailwind, Next.js]</p>
+          </div>
+        </div>
+
+        <div class="glass-panel skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+          <div class="skill-info">
+            <h4>[Backend Engineering]</h4>
+            <p>[Node.js, Python, PostgreSQL, REST/GraphQL]</p>
+          </div>
+        </div>
+
+        <div class="glass-panel skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="skill-info">
+            <h4>[System Design / Cloud]</h4>
+            <p>[Docker, AWS, Cloudflare, Microservices]</p>
+          </div>
+        </div>
+
+        <div class="glass-panel skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <div class="skill-info">
+            <h4>[Creative & UI/UX]</h4>
+            <p>[Responsive Design, Motion Systems, Figma]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="glass-panel project-card">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600" alt="Project 1">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">[Project Name 1]</h3>
+            <p class="project-desc">[Short description highlighting key problem solved, architectural approach, and measurable impact.]</p>
+            <div class="project-tech">
+              <span class="tech-pill">[Tech 1]</span>
+              <span class="tech-pill">[Tech 2]</span>
+              <span class="tech-pill">[Tech 3]</span>
+            </div>
+            <div class="project-links">
+              <a href="[LIVE_DEMO_URL]" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Live Demo</a>
+              <a href="[GITHUB_URL]" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="glass-panel project-card">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=600" alt="Project 2">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">[Project Name 2]</h3>
+            <p class="project-desc">[Short description highlighting key problem solved, architectural approach, and measurable impact.]</p>
+            <div class="project-tech">
+              <span class="tech-pill">[Tech 1]</span>
+              <span class="tech-pill">[Tech 2]</span>
+              <span class="tech-pill">[Tech 3]</span>
+            </div>
+            <div class="project-links">
+              <a href="[LIVE_DEMO_URL]" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Live Demo</a>
+              <a href="[GITHUB_URL]" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="glass-panel project-card">
+          <div class="project-thumb">
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=600" alt="Project 3">
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">[Project Name 3]</h3>
+            <p class="project-desc">[Short description highlighting key problem solved, architectural approach, and measurable impact.]</p>
+            <div class="project-tech">
+              <span class="tech-pill">[Tech 1]</span>
+              <span class="tech-pill">[Tech 2]</span>
+              <span class="tech-pill">[Tech 3]</span>
+            </div>
+            <div class="project-links">
+              <a href="[LIVE_DEMO_URL]" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Live Demo</a>
+              <a href="[GITHUB_URL]" class="btn btn-secondary btn-sm" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Trajectory</span>
+        <h2 class="section-title">Milestones & Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-panel timeline-card">
+            <div class="timeline-date">[2024 — Present]</div>
+            <h3 class="timeline-role">[Current Role / Status]</h3>
+            <div class="timeline-org">[Company / Agency / Independent Practice]</div>
+            <p class="project-desc">[Summary of core responsibilities, architecture scaling, or key innovations delivered during this tenure.]</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="glass-panel timeline-card">
+            <div class="timeline-date">[2022 — 2024]</div>
+            <h3 class="timeline-role">[Previous Role / Project Milestone]</h3>
+            <div class="timeline-org">[Organization / Client Project]</div>
+            <p class="project-desc">[Key milestones, software products launched, or major performance improvements executed.]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Direct Line</span>
+        <h2 class="section-title">Get in Touch</h2>
+      </div>
+
+      <div class="glass-panel contact-container">
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email Address" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Tell me about your project or inquiry..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fa-regular fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+
+        <div style="margin-top: 2rem; text-align: center;">
+          <p style="font-size: 0.9rem; color: var(--text-muted);">
+            Direct Email: <a href="mailto:[YOUR_EMAIL@EXAMPLE.COM]" style="color: #fff; text-decoration: underline;">[YOUR_EMAIL@EXAMPLE.COM]</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> [YOUR NAME]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- External Script -->
+  <script src="script.js"></script>
+</body>
+</html>
